@@ -31,24 +31,26 @@
             border-radius: 10px;
             max-width: 90%;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            position: relative; /* Added this for absolute positioning within */
         }
 
         .bottom-right {
             position: absolute;
             bottom: 10px;
-            right: 55px;
+            right: 10px;
             text-align: right;
         }
 
         .bottom-right .logo {
-            width: 15vw;
+            width: 7vw;
         }
 
         .bottom-center {
             position: absolute;
-            bottom: 1%;
-            right: 35%;
-            text-align: end;
+            bottom: 10px;
+            right: 50%;
+            transform: translateX(50%);
+            text-align: center;
         }
 
         .small-logo {
@@ -74,10 +76,9 @@
         }
 
         .quote-text {
-            font-size: 1%vw;
+            font-size: 1vw;
             font-family: 'Times New Roman', Times, serif;
         }
-
 
         .h5-text {
             font-size: 2vw;
@@ -86,7 +87,7 @@
         }
 
         .h6-text {
-            font-size: 1vw;
+            font-size: 0.5vw;
             font-style: italic;
         }
 
@@ -96,8 +97,8 @@
         }
 
         @media (max-width: 1024px) {
-            .logo {
-                width: 15vw;
+            .bottom-right .logo {
+                width: 7vw;
             }
             
             .small-logo {
@@ -117,20 +118,20 @@
             }
 
             .h6-text {
-                font-size: 1.5vw;
-                bottom: 1%;
-                right: 20%;
-                text-align: end;
+                font-size: 1vw;
             }
 
             .position-text {
                 font-size: 2vw;
             }
+            .quote-text { 
+                font-size: 1.3vw;
+            }
         }
 
         @media (max-width: 768px) {
-            .logo {
-                width: 20vw;
+            .bottom-right .logo {
+                width: 7vw;
             }
             
             .small-logo {
@@ -150,20 +151,20 @@
             }
 
             .h6-text {
-                font-size: 1.5vw;
-                bottom: 1%;
-                right: 27%;
-                text-align: end;
+                font-size: 1vw;
             }
 
             .position-text {
                 font-size: 3vw;
             }
+            .quote-text { 
+                font-size: 1.8vw;
+            }
         }
 
         @media (max-width: 480px) {
-            .logo {
-                width: 30vw;
+            .bottom-right .logo {
+                width: 9vw;
             }
             
             .small-logo {
@@ -183,14 +184,15 @@
             }
 
             .h6-text {
-                font-size: 3vw;
-                bottom: 1%;
-                right: 30%;
-                text-align:end;
+                font-size: 1vw;
             }
 
             .position-text {
                 font-size: 4vw;
+            }
+
+            .quote-text { 
+                font-size: 2.3vw;
             }
         }
     </style>
@@ -202,20 +204,21 @@
         <div class="text position-text">Admin & IT Supervisor</div>
 
         <div class="bottom-right">
-        <div class="logo">
             <img src="pics/logo.png" alt="Company Logo" class="logo">
         </div>
+
+        <div class="quote-text">
+            President & CEO Lake Farm de La Marre Agri-tourism Park<br>
+            General Manager, Events by: One Source<br>
+            General Manager, Bioserv Water Refilling Station<br>
+            Vice-President, Venture 10 Corp.<br>
+            President, Philippine Association of Legitimate Service Contractors Inc. (PALSCON) South Luzon Chapter<br>
+            Auditor, Philippine Association of Legitimate Service Contractors Inc. (PALSCON) National<br>
+            Treasurer, Regional Tripartite Industrial Peace Council- DOLE IVA<br>
+            Board Member, Laguna Industrial Peace Council Inc.- DOLE Laguna<br>
+            Member, Rotary Club of Cabuyao Circle Dist. 3820<br>
+            Member, The Peak Tagaytay
         </div>
-    <div class="quote-text"> President & CEO Lake Farm de La Marre Agri-tourism Park
-        General Manager, Events by: One Source General
-        Manager, Bioserv Water Refilling Station
-        Vice-President, Venture 10 Corp.
-        President, Philippine Association of Legitimate Service Contractors Inc. (PALSCON) South Luzon Chapter
-        Auditor, Philippine Association of Legitimate Service Contractors Inc. (PALSCON) National
-        Treasurer, Regional Tripartite Industrial Peace Council- DOLE IVA
-        Board Member, Laguna Industrial Peace Council Inc.- DOLE Laguna
-        Member, Rotary Club of Cabuyao Circle Dist. 3820
-        Member, The Peak Tagaytay,</div>
 
         <div class="text h5-text">"Innovating Service Quality ..."</div>
 
